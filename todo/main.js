@@ -1,4 +1,6 @@
-const todos = JSON.parse(localStorage.getItem('todos'));
+let todos = [];
+todos = JSON.parse(localStorage.getItem('todos'))
+
 const errorMessage = document.getElementById('errorMessage')
 
 const render = () => {
@@ -19,10 +21,10 @@ const render = () => {
 
 window.onload = () => {
 
+    render();
+
     const form = document.getElementById('todo-form')
     // Agregando elementos
-
-    render()
 
     form.onsubmit = (e) => {
         e.preventDefault()

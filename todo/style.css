@@ -17,6 +17,10 @@ body{
     padding: 10px;
 }
 
+.container > h1 {
+    text-align: center;
+}
+
 .btn-nuevo{
     border: none;
     padding: 5px;
