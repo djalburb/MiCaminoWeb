@@ -126,6 +126,7 @@ body{
 
 #todo-list li:hover{
     text-decoration:line-through;
+    color: red;
     cursor: pointer;
 }
 
